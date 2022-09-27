@@ -57,7 +57,7 @@ test('resolves with unicorn', t => {
 AVA comes with built-in support for [async functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function).
 
 ```js
-test(async function (t) {
+test('promises the truth', async function (t) {
 	const value = await promiseFn();
 	t.true(value);
 });
