@@ -103,7 +103,7 @@ Failing assertion. Returns a boolean indicating whether the assertion passed.
 
 ### `.assert(actual, message?)`
 
-Asserts that `actual` is truthy. Returns a boolean indicating whether the assertion passed.
+Assert that `actual` is truthy. Returns a boolean indicating whether the assertion passed.
 
 ### `.truthy(actual, message?)`
 
@@ -171,7 +171,7 @@ Assert that an error is thrown. `fn` must be a function which should throw. The 
 `expectation` can be an object with one or more of the following properties:
 
 * `instanceOf`: a constructor, the thrown error must be an instance of
-* `is`: the thrown error must be strictly equal to `expectation.is`
+* `is`: the thrown error must be strictly equal to `expectation`
 * `message`: the following types are valid: 
   * *string* - it is compared against the thrown error's message
   * *regular expression* - it is matched against this message
@@ -206,7 +206,7 @@ The thrown value *must* be an error. It is returned so you can run more assertio
 `expectation` can be an object with one or more of the following properties:
 
 * `instanceOf`: a constructor, the thrown error must be an instance of
-* `is`: the thrown error must be strictly equal to `expectation.is`
+* `is`: the thrown error must be strictly equal to `expectation`
 * `message`: the following types are valid: 
   * *string* - it is compared against the thrown error's message
   * *regular expression* - it is matched against this message
